@@ -33,3 +33,4 @@ git clone https://github.com/Develeps/ardupilot-gazebo-setup.git
 cd ardupilot-gazebo-setup
 chmod +x install_ardupilot_gazebo.sh
 ./install_ardupilot_gazebo.sh
+```

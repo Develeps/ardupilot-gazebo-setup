@@ -85,17 +85,17 @@ fi
 
 echo "Установка завершена! Теперь можно запустить симуляцию."
 
-# === 13. Запуск симуляции ===
-read -p "Хотите запустить симуляцию прямо сейчас? (y/n): " answer
-if [[ "$answer" == "y" || "$answer" == "Y" ]]; then
-    echo "Запускаем Gazebo..."
-    gz sim -v4 -r iris_runway.sdf &
+# # === 13. Запуск симуляции ===
+# read -p "Хотите запустить симуляцию прямо сейчас? (y/n): " answer
+# if [[ "$answer" == "y" || "$answer" == "Y" ]]; then
+#     echo "Запускаем Gazebo..."
+#     gz sim -v4 -r iris_runway.sdf &
 
-    sleep 5
+#     sleep 5
 
-    echo "Запускаем ArduPilot SITL..."
-    cd ~/ardupilot/ArduCopter
-    sim_vehicle.py -v ArduCopter -f gazebo-iris --model JSON --map --console
-fi
+#     echo "Запускаем ArduPilot SITL..."
+#     cd ~/ardupilot/ArduCopter
+#     sim_vehicle.py -v ArduCopter -f gazebo-iris --model JSON --map --console
+# fi
 
-echo "Установка и настройка завершены!"
+# echo "Установка и настройка завершены!"
